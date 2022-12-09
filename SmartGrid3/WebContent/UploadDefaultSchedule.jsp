@@ -459,8 +459,8 @@ System.out.println("MM_dbConn_STRING--->"+MM_dbConn_PASSWORD);
 		con1 = DriverManager.getConnection(MM_dbConn_STRING,MM_dbConn_USERNAME,MM_dbConn_PASSWORD);
 		Statement st = null, st1 = null, st3 = null, st4 = null,st2 = null;
 
-		con2 = DriverManager.getConnection("jdbc:mysql://103.241.181.36:3306/smartgrid","fleetview","1@flv");
-		con3 = DriverManager.getConnection("jdbc:mysql://103.241.181.36:3306/db_gps","fleetview","1@flv");
+		con2 = DriverManager.getConnection("jdbc:mysql://164.68.105.216:3306/smartgrid","fleetview","1@flv");
+		con3 = DriverManager.getConnection("jdbc:mysql://164.68.105.216:3306/db_gps","fleetview","1@flv");
 
 		//con2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/smartgrid","root","root");
 		Statement st5 = null;

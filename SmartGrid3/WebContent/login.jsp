@@ -42,7 +42,7 @@ function Redirect2()
 System.out.println("userid : "+userid);
 
     String pwd = request.getParameter("password");
-    Class.forName("com.mysql.jdbc.Driver");
+    Class.forName("org.gjt.mm.mysql.Driver");
     
    /*  String MM_dbConn_DRIVER="org.gjt.mm.mysql.Driver";
     String MM_dbConn_USERNAME="fleetview";

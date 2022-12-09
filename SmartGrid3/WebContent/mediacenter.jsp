@@ -204,7 +204,7 @@ visibility: visible;
  	
 	try {
 		Class.forName("org.gjt.mm.mysql.Driver");
-		Connection con1 = DriverManager.getConnection("jdbc:mysql://103.241.181.36/smartgrid", "fleetview",
+		Connection con1 = DriverManager.getConnection("jdbc:mysql://164.68.105.216/smartgrid", "fleetview",
 				"1@flv");
 		
 		String userid=session.getAttribute("userid").toString();

@@ -15,9 +15,9 @@ Statement st=null;
 try
 {
 Class.forName("org.gjt.mm.mysql.Driver"); 
-//conn=DriverManager.getConnection("jdbc:mysql://103.241.181.36/db_leaveapplication","erp","1@erp");
+//conn=DriverManager.getConnection("jdbc:mysql://164.68.105.216/db_leaveapplication","erp","1@erp");
 conn=DriverManager.getConnection(MM_dbConn_STRING,MM_dbConn_USERNAME, MM_dbConn_PASSWORD);
-//conn=DriverManager.getConnection("jdbc:mysql://103.241.181.36/db_leaveapplication","fleetview","1@flv");
+//conn=DriverManager.getConnection("jdbc:mysql://164.68.105.216/db_leaveapplication","fleetview","1@flv");
 
 ResultSet rst=null;
 String sql="";

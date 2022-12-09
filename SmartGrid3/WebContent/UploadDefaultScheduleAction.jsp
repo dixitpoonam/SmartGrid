@@ -55,10 +55,10 @@ ResultSet rs,rs1,rs2;
 String MM_dbConn_DRIVER="org.gjt.mm.mysql.Driver";
 String MM_dbConn_USERNAME="fleetview";
 String MM_dbConn_PASSWORD="1@flv";
-String MM_dbConn_STRING="jdbc:mysql://103.241.181.36/smartgrid";
+String MM_dbConn_STRING="jdbc:mysql://164.68.105.216/smartgrid";
 //String MM_dbConn_STRING="jdbc:mysql://localhost:3306/smartgrid";
 //String MM_dbConn_STRING="jdbc:mysql://localhost:3306/smartgrid";
-String MM_dbConn_STRING1="jdbc:mysql://103.241.181.36/db_gpsExceptions";
+String MM_dbConn_STRING1="jdbc:mysql://164.68.105.216/db_gpsExceptions";
 Class.forName(MM_dbConn_DRIVER);
 con1 = DriverManager.getConnection(MM_dbConn_STRING,MM_dbConn_USERNAME,MM_dbConn_PASSWORD);
 

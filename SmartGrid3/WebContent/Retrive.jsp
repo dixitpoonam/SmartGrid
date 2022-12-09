@@ -22,7 +22,7 @@ pageEncoding="ISO-8859-1"%>
 
   out.println("Retrieve Image Example!");
   String driverName = "com.mysql.jdbc.Driver";
-  String url = "jdbc:mysql://103.241.181.36:3306/";
+  String url = "jdbc:mysql://164.68.105.216:3306/";
   String dbName = "jsp";
   String userName = "root";
   String password = "root.123";

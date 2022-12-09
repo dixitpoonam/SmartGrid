@@ -218,8 +218,8 @@ dt1=dt1+" 23:59:59";
 
 
  String DB_Driver="com.mysql.jdbc.Driver";
-String DB_NAME="jdbc:mysql://103.241.181.36:3306/smartgrid";
-//String DB_NAME1="jdbc:mysql://103.241.181.36:3306/newblankerp"; 
+String DB_NAME="jdbc:mysql://164.68.105.216:3306/smartgrid";
+//String DB_NAME1="jdbc:mysql://164.68.105.216:3306/newblankerp"; 
 String DB_USERNAME="erp";
 String DB_PASSWORD="1@erp";
  

@@ -103,7 +103,7 @@ else
 	//alert(userid);
 	alert(formattedDate1);
 	alert(formattedDate2); */
-	document.getElementById("myIframe").src="http://103.241.181.36:8080/birttest/frameset?__report=BulkBooking.rptdesign&__showtitle=false";
+	document.getElementById("myIframe").src="http://164.68.105.216:8080/birttest/frameset?__report=BulkBooking.rptdesign&__showtitle=false";
 	
 //	document.getElementById('myIframe').src="http://103.8.126.138:8080/birt/frameset?__report=driverreport1.rptdesign&_title='My Viewer'&date1=2015-03-01&date2=2015-08-28&drivername="+driver+"";
 	document.getElementById("reportData").style.display="";
@@ -153,7 +153,7 @@ String userid=session.getAttribute("userid").toString();
 <div class="absolute" align="center" >
 	
 	<!-- <iframe id="myIframe" style="width: 100%; height: 500px;" src=  http://192.168.2.97:8080/birttest/frameset?__report=ZoneMaster.rptdesign&status=All&__showtitle=false"></iframe> -->
-	<iframe id="myIframe" style="width: 100%; height: 500px;" src="http: //103.241.181.36/SmartGridBirt/frameset?__report=BulkBooking.rptdesign&__showtitle=false"></iframe>
+	<iframe id="myIframe" style="width: 100%; height: 500px;" src="http: //164.68.105.216/SmartGridBirt/frameset?__report=BulkBooking.rptdesign&__showtitle=false"></iframe>
 	
 	</div>
 	</center>

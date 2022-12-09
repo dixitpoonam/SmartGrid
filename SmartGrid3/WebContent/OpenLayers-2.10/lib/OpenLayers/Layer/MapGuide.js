@@ -138,7 +138,7 @@ OpenLayers.Layer.MapGuide = OpenLayers.Class(OpenLayers.Layer.Grid, {
      * Parameters:
      * name - {String} Name of the layer displayed in the interface
      * url - {String} Location of the MapGuide mapagent executable
-     *            (e.g. http://103.241.181.36:8008/mapguide/mapagent/mapagent.fcgi)
+     *            (e.g. http://164.68.105.216:8008/mapguide/mapagent/mapagent.fcgi)
      * params - {Object} hashtable of additional parameters to use. Some
      *     parameters may require additional code on the server. The ones that
      *     you may want to use are: 

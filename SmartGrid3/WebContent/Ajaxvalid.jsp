@@ -12,7 +12,7 @@
 <% 
 
 Class.forName("com.mysql.jdbc.Driver");  
-	//Connection conn1 = DriverManager.getConnection("jdbc:mysql://103.241.181.36/test","root","transworld"); 
+	//Connection conn1 = DriverManager.getConnection("jdbc:mysql://164.68.105.216/test","root","transworld"); 
 	Connection conn1= DriverManager.getConnection(MM_dbConn_STRING,MM_dbConn_USERNAME, MM_dbConn_PASSWORD);
 	Statement st=conn1.createStatement();
 String date=request.getParameter("date");

@@ -7,7 +7,7 @@
         t.plan(5);
 
         var options = {
-            url: 'http://103.241.181.36/wms',
+            url: 'http://164.68.105.216/wms',
             layers: ["foo"],
             formatOptions: {
                 foo: "bar"
@@ -16,7 +16,7 @@
         var control = new OpenLayers.Control.WMSGetFeatureInfo(options);
         t.ok(control instanceof OpenLayers.Control.WMSGetFeatureInfo,
              "new OpenLayers.Control.WMSGetFeatureInfo returns an instance");
-        t.eq(control.url, 'http://103.241.181.36/wms',
+        t.eq(control.url, 'http://164.68.105.216/wms',
              "constructor sets url correctly");
         t.eq(control.layers, ["foo"],
              "constructor layers"
@@ -73,12 +73,12 @@
         t.plan(2);
         var map = new OpenLayers.Map("map");
         var click = new OpenLayers.Control.WMSGetFeatureInfo({
-            url: 'http://103.241.181.36/wms',
+            url: 'http://164.68.105.216/wms',
             layers: ["foo"]
         });
 
         var hover = new OpenLayers.Control.WMSGetFeatureInfo({
-            url: 'http://103.241.181.36/wms',
+            url: 'http://164.68.105.216/wms',
             layers: ["foo"],
             hover: true
         });
@@ -170,15 +170,15 @@
         t.plan(4);
         var map = new OpenLayers.Map("map");
         var click = new OpenLayers.Control.WMSGetFeatureInfo({
-            url: 'http://103.241.181.36/wms',
+            url: 'http://164.68.105.216/wms',
             featureType: 'type',
-            featureNS: 'http://103.241.181.36/ns',
+            featureNS: 'http://164.68.105.216/ns',
             layers: 'ns:type'
         });
         var hover = new OpenLayers.Control.WMSGetFeatureInfo({
-            url: 'http://103.241.181.36/wms',
+            url: 'http://164.68.105.216/wms',
             featureType: 'type',
-            featureNS: 'http://103.241.181.36/ns',
+            featureNS: 'http://164.68.105.216/ns',
             layers: 'ns:type',
             hover: true
         });
@@ -200,15 +200,15 @@
         t.plan(2);
         var map = new OpenLayers.Map("map");
         var click = new OpenLayers.Control.WMSGetFeatureInfo({
-            url: 'http://103.241.181.36/wms',
+            url: 'http://164.68.105.216/wms',
             featureType: 'type',
-            featureNS: 'http://103.241.181.36/ns',
+            featureNS: 'http://164.68.105.216/ns',
             layers: 'ns:type'
         });
         var hover = new OpenLayers.Control.WMSGetFeatureInfo({
-            url: 'http://103.241.181.36/wms',
+            url: 'http://164.68.105.216/wms',
             featureType: 'type',
-            featureNS: 'http://103.241.181.36/ns',
+            featureNS: 'http://164.68.105.216/ns',
             layers: 'ns:type'
         });
         map.addControl(click);
@@ -239,21 +239,21 @@
             }
         );
 
-        var a = new OpenLayers.Layer.WMS("dummy","http://103.241.181.36/wms", {
+        var a = new OpenLayers.Layer.WMS("dummy","http://164.68.105.216/wms", {
             layers: "a,b,c,d",
             styles: "a,b,c,d"
         });
 
-        var b = new OpenLayers.Layer.WMS("dummy","http://103.241.181.36/wms", {
+        var b = new OpenLayers.Layer.WMS("dummy","http://164.68.105.216/wms", {
             layers: ["a","b","c","d"],
             styles: ["a","b","c","d"]
         });
 
-        var c = new OpenLayers.Layer.WMS("dummy","http://103.241.181.36/wms", {
+        var c = new OpenLayers.Layer.WMS("dummy","http://164.68.105.216/wms", {
             layers: ["a","b","c","d"]
         });
 
-        var d = new OpenLayers.Layer.WMS("dummy","http://103.241.181.36/wms", {
+        var d = new OpenLayers.Layer.WMS("dummy","http://164.68.105.216/wms", {
             layers: "a,b,c,d"
         });
 
@@ -276,7 +276,7 @@
 
         t.eq(
             log.options && log.options.url,
-            "http://103.241.181.36/wms",
+            "http://164.68.105.216/wms",
             "url from first layer used"
         );
         t.eq(
@@ -414,11 +414,11 @@
             }
         );
 
-        var a = new OpenLayers.Layer.WMS("dummy","http://103.241.181.36/wms", {
+        var a = new OpenLayers.Layer.WMS("dummy","http://164.68.105.216/wms", {
             layers: "a"
         });
 
-        var b = new OpenLayers.Layer.WMS("dummy","http://103.241.181.36/wms", {
+        var b = new OpenLayers.Layer.WMS("dummy","http://164.68.105.216/wms", {
             layers: "c"
         });
 
@@ -440,7 +440,7 @@
             count++;
             if (count == 1) {
                 t.eq(options.params["QUERY_LAYERS"].join(","), "a,c", "Layers should be grouped by service url");
-                t.eq(options.url, "http://103.241.181.36/wms", "Correct url used for first request");
+                t.eq(options.url, "http://164.68.105.216/wms", "Correct url used for first request");
             } else if (count == 2) {
                 t.eq(options.url, "http://myhost/wms", "Correct url used for second request");
             }
@@ -459,7 +459,7 @@
             }
         );
 
-        var a = new OpenLayers.Layer.WMS(null, "http://103.241.181.36/wms", {
+        var a = new OpenLayers.Layer.WMS(null, "http://164.68.105.216/wms", {
             layers: "a",
             version: "1.3.0"
         });

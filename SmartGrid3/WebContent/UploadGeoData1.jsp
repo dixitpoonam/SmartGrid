@@ -159,7 +159,7 @@ try{
 						String MM_dbConn_PASSWORD = "root.123"; */
 						//String MM_dbConn_GPS = "jdbc:mysql://103.8.126.138/db_gps";
 					//	String MM_dbConn_GPS = "jdbc:mysql://103.8.126.138/db_gps"; 
-						/* String MM_dbConn_GPS = "jdbc:mysql://103.241.181.36/jsp"; */
+						/* String MM_dbConn_GPS = "jdbc:mysql://164.68.105.216/jsp"; */
 			
 						Class.forName(MM_dbConn_DRIVER);
 						conne = DriverManager.getConnection(MM_dbConn_STRING,MM_dbConn_USERNAME, MM_dbConn_PASSWORD);
